@@ -834,14 +834,12 @@
                     <h1>ZAKARI BOUTAYNA</h1>
                     <h2>Ingénieure en Génie Électrique | Automatisation & IoT</h2>
                     <p>Étudiante en 2ème année du cycle ingénieur à l'ENSAM Casablanca. Passionnée par l'innovation technologique, l'automatisation et les systèmes intelligents. À la recherche d'un stage PFA de 2 mois entre juin et août.</p>
-                    <a href="#contact" class="btn">Me contacter</a>
-                    <a href="#projects" class="btn btn-secondary">Voir mes projets</a>
+                    <!-- Les boutons ont été supprimés ici -->
                 </div>
                 <div class="hero-image">
                     <!-- Remplace cette section par ta vraie photo -->
                     <div class="profile-photo-container">
-                                                <img src="Capture d’écran 2026-02-01 013042.png" alt="Zakari Boutayna" class="profile-photo">
-                       
+                        <img src="Capture d’écran 2026-02-01 013042.png" alt="Zakari Boutayna" class="profile-photo">
                     </div>
                 </div>
             </div>
@@ -859,7 +857,6 @@
                     <!-- Photo secondaire optionnelle -->
                     <div class="about-photo-container">
                         <img src="aa.png" alt="Zakari Boutayna" class="about-photo">
-                
                     </div>
                 </div>
                 <div class="about-text">
@@ -917,6 +914,15 @@
             </div>
             
             <div class="timeline">
+                <!-- Ajout du nouveau stage CodeAlpha - Premier dans la timeline -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">Janvier 2026</span>
+                        <h4>Stage — CodeAlpha</h4>
+                        <p>Stage en développement et automatisation. Participation à des projets innovants dans le domaine des technologies émergentes.</p>
+                    </div>
+                </div>
+                
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <span class="timeline-date">Juillet – Août 2025</span>
@@ -1183,7 +1189,7 @@
                     <a href="mailto:zakariboutayna02@gmail.com" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="https://linkedin.com/in/zakari-boutayna" class="social-link" target="_blank">
+                    <a href="linkedin.com/in/zakari-boutayna" class="social-link" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="tel:+212625044234" class="social-link">
@@ -1256,26 +1262,6 @@
             observer.observe(el);
         });
         
-        // Simulate photo loading (à remplacer par ta vraie photo)
-        function loadProfilePhoto() {
-            // Pour ajouter ta photo, remplace ce code par :
-            // const photoUrl = 'chemin/vers/ta-photo.jpg';
-            // document.querySelector('.profile-photo-container').innerHTML = `
-            //     <img src="${photoUrl}" alt="Zakari Boutayna" class="profile-photo">
-            // `;
-            
-            // Version temporaire avec placeholder amélioré
-            const placeholder = document.querySelector('.photo-placeholder');
-            if (placeholder) {
-                placeholder.innerHTML = `
-                    <i class="fas fa-user-tie"></i>
-                    <p>Zakari Boutayna</p>
-                    <p><small>Ingénieure en Génie Électrique</small></p>
-                    <p><small><em>Pour ajouter ta photo : remplace le placeholder dans le code</em></small></p>
-                `;
-            }
-        }
-        
         // Gestion du lien du projet Ordonnancement Industriel
         function setupProjectLinks() {
             const projectLink = document.querySelector('.project-link');
@@ -1288,7 +1274,7 @@
                     projectLink.addEventListener('click', function(e) {
                         if (this.getAttribute('href') === '#') {
                             e.preventDefault();
-                            alert('Remplace le lien "#" par ton vrai lien de projet dans le code HTML (ligne ~390)');
+                            alert('Remplace le lien "#" par ton vrai lien de projet dans le code HTML (ligne ~380)');
                         }
                     });
                 }
@@ -1297,7 +1283,6 @@
         
         // Appeler les fonctions au chargement
         window.addEventListener('DOMContentLoaded', () => {
-            loadProfilePhoto();
             setupProjectLinks();
         });
     </script>
