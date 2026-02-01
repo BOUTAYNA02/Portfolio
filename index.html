@@ -1053,8 +1053,8 @@
                             <span class="tag">Simulation</span>
                             <span class="tag">Optimisation</span>
                         </div>
-                        <!-- Lien du projet - Remplace # par ton vrai lien -->
-                        <a href="#" class="project-link" target="_blank">
+                        <!-- Lien du projet MIS À JOUR -->
+                        <a href="https://ordonnancement-industriel.vercel.app/" class="project-link" target="_blank">
                             <i class="fas fa-external-link-alt"></i>
                             Voir le projet
                         </a>
@@ -1152,7 +1152,8 @@
                         </div>
                         <div class="contact-text">
                             <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/zakari-boutayna</p>
+                            <!-- Lien LinkedIn MIS À JOUR -->
+                            <p><a href="https://www.linkedin.com/in/z-boutayna-a16003200/" target="_blank" style="color: var(--secondary); text-decoration: none;">linkedin.com/in/z-boutayna-a16003200</a></p>
                         </div>
                     </div>
                     
@@ -1189,7 +1190,8 @@
                     <a href="mailto:zakariboutayna02@gmail.com" class="social-link">
                         <i class="fas fa-envelope"></i>
                     </a>
-                    <a href="linkedin.com/in/zakari-boutayna" class="social-link" target="_blank">
+                    <!-- Lien LinkedIn MIS À JOUR dans le footer -->
+                    <a href="https://www.linkedin.com/in/z-boutayna-a16003200/" class="social-link" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                     <a href="tel:+212625044234" class="social-link">
@@ -1266,18 +1268,8 @@
         function setupProjectLinks() {
             const projectLink = document.querySelector('.project-link');
             if (projectLink) {
-                // Remplace '#' par ton vrai lien GitHub ou autre
-                // Exemple: projectLink.href = 'https://github.com/tonusername/projet-ordonnancement';
-                
-                // Pour l'instant, on montre un message si le lien n'est pas configuré
-                if (projectLink.getAttribute('href') === '#') {
-                    projectLink.addEventListener('click', function(e) {
-                        if (this.getAttribute('href') === '#') {
-                            e.preventDefault();
-                            alert('Remplace le lien "#" par ton vrai lien de projet dans le code HTML (ligne ~380)');
-                        }
-                    });
-                }
+                // Le lien est maintenant correctement configuré
+                console.log('Lien du projet configuré :', projectLink.href);
             }
         }
         
